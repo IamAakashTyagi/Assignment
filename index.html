@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trello Board</title>
+    <link rel="stylesheet" href="/Css/main.css">
+    <link rel="stylesheet" href="/Css/board.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Grenze+Gotisch:wght@800&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/Css/reset.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-1">
+            <li>
+                <i class="fas fa-home"></i>
+            </li>
+            <li>
+                <i class="fas fa-th-list"> Boards</i>
+            </li>
+            <input type="text" id="input">
+           
+        </ul>
+        <div class="nav-2">
+            Trello
+        </div>
+        <ul class="nav-3">
+            <li>
+                <i class="fas fa-plus"></i>
+            </li>
+            <li>
+                <i class="fas fa-user"></i>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="board">
+            <div class="task-list-wrapper" id="To-do">
+                          <h1 class="main-head">To do</h1>
+                    <span class="board-ell">   <i class="fas fa-ellipsis-h "></i>  </span>   
+                    <form>
+                        <input type="text" class="field" placeholder="Learn HTML" readonly>
+                        <input type="text" class="field" placeholder="Learn CSS" readonly>
+                        <input type="text" class="field" placeholder="Learn javaScript" readonly>
+                    </form>
+                   <span class="add"> <a href="#">+ Add another card</a>  </span>
+            </div>
+            <div class="task-list-wrapper">
+                <h1 class="main-head">Doing</h1>
+                <span class="board-ell">   <i class="fas fa-ellipsis-h "></i>  </span> 
+                <form>
+                <input type="text" class="field" placeholder="Prepare a Resume" readonly>
+                 <textarea id="text-area" cols="25" rows="4" placeholder="Enter a title for this card..."></textarea>
+                 <input type="button" class="btn" value="Add card">
+                 <span style="font-size: 1.3em; padding: 2px; color:#827272 ;" class="cross"><i class="fas fa-times"></i></span>
+                </form> 
+    
+            </div>
+            <div class="task-list-wrapper">
+                <h1 class="main-head">Testing/Verifying</h1>
+                <span class="board-ell">   <i class="fas fa-ellipsis-h "></i>  </span> 
+                <input type="text" class="field" placeholder="Twitter app frontend" readonly>  
+                <span class="add"> <a href="#">+ Add another field</a>  </span>
+            </div>
+            <div class="task-list-wrapper">
+                <h1 class="main-head">Deploying</h1>
+                <span class="board-ell">   <i class="fas fa-ellipsis-h "></i>  </span>   
+                <input type="text" class="field" placeholder="Twitter app backend" readonly>  
+                <span class="add"> <a href="#">+ Add another field</a>  </span>
+            </div>
+            <div class="task-list-wrapper">
+                <h1 class="main-head">Done</h1>
+                <span class="board-ell">   <i class="fas fa-ellipsis-h "></i>  </span>   
+                <br>
+                <span class="add"> <a href="#">+ Add card</a>  </span>
+            </div>
+            <div class="task-list-wrapper">  
+                <span class="add"> <a href="#">+ Add another list</a>  </span>
+            </div>
+            <div class="task-list-wrapper">  
+                <textarea id="text-area" cols="25" rows="4" placeholder="Enter list title..."></textarea>
+                 <input type="button" class="btn" value="Add list">
+                 <span style="font-size: 1.3em; padding: 2px; color:#827272 ;" class="cross"><i class="fas fa-times"></i></span>
+            </div>
+         </div>
+    </div>
+
+    
+</body>
+</html>
