@@ -8,9 +8,9 @@
     flex-wrap: nowrap;
     overflow: auto;
     margin-top: 20px;
-    padding: 84px 20px 20px;
+    padding: 0px 10px 20px;
     justify-content: space-between;
-    min-height: 580px;
+    min-height: 540px;
     margin-right: 10px;
     
 }
@@ -26,7 +26,7 @@
 .board div{
     width: 500px;
     background-color: rgba( 240, 240, 240, 0.9 );
-    margin: 20px;
+    margin: 10px;
     border-radius: 5px;
     height: auto;
     padding: 7px;
@@ -56,6 +56,7 @@
     outline: none;
     cursor: pointer;
     width: 90%;
+    height: 31px;
     
 }
 .add a{
@@ -95,6 +96,32 @@
 }
 .field:hover{
     opacity: 0.6;
+    
 }
+.new{
+    margin-left: -25px;
+    margin-top: 8px;
+    display: inline;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+
+}
+.new i{
+    font-size: 0.9em;
+    opacity: 0.7;
+}
+
+
+.field:hover + .new{
+    display: inline;
+    
+}
+.new:hover{
+    opacity: 0.6;
+}
+
+
+
 
     

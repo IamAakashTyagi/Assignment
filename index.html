@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trello Board</title>
-    <link rel="stylesheet" href="/Css/main.css">
-    <link rel="stylesheet" href="/Css/board.css">
+    <link rel="stylesheet" href="/greatLearning/Css/reset.css">
+    <link rel="stylesheet" href="/greatLearning/Css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Grenze+Gotisch:wght@800&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/Css/reset.css">
+    <link rel="stylesheet" href="/greatLearning/Css/board.css">
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar1">
         <ul class="nav-1">
             <li>
                 <i class="fas fa-home"></i>
@@ -35,6 +35,12 @@
             </li>
         </ul>
     </nav>
+    <nav class="navbar2">
+      <span style="margin: 5px; padding: 1px; font-family: serif; font-weight: 600;">Frontend Training</span>
+      <span style="float: right;margin: 2px; padding: 1px;">
+        <i class="fas fa-ellipsis-v"> Menu</i>
+      </span>
+    </nav>
 
     <div class="container">
         <div class="board">
@@ -42,9 +48,13 @@
                           <h1 class="main-head">To do</h1>
                     <span class="board-ell">   <i class="fas fa-ellipsis-h "></i>  </span>   
                     <form>
-                        <input type="text" class="field" placeholder="Learn HTML" readonly>
+                        <input type="text" class="field" id="f1" placeholder="Learn HTML" readonly> 
+                        
+                        <span id="new" class="new"><i class="fas fa-pencil-alt"></i></span>
                         <input type="text" class="field" placeholder="Learn CSS" readonly>
+                        <span class="new"><i class="fas fa-pencil-alt"></i></span>
                         <input type="text" class="field" placeholder="Learn javaScript" readonly>
+                        <span class="new"><i class="fas fa-pencil-alt"></i></span>
                     </form>
                    <span class="add"> <a href="#">+ Add another card</a>  </span>
             </div>
@@ -87,7 +97,9 @@
             </div>
          </div>
     </div>
+  <script src="app.js">
 
+  </script>
     
 </body>
 </html>

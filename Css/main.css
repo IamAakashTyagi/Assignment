@@ -6,12 +6,12 @@ body{
 *{
     box-sizing: border-box;
 }
-.navbar{
+.navbar1{
     display: flex;
     width: 100%;
     justify-content: space-between;
     color: white;
-    height: 50px;
+    height: 48px;
     padding: 8px 20px;
     background-color: rgba( 64, 144, 172, 0.65 );
     
@@ -26,7 +26,7 @@ body{
      padding: 6px;
  }
  nav li {
-     background-color:rgba( 64, 144, 172, 1 );
+     background-color:rgba( 64, 144, 172, 0.9 )
     
  }
 #input{
@@ -47,11 +47,26 @@ body{
 div.nav-2{
     font-family: 'Galada', cursive;
     font-size: 1.9em;
-    padding: 5px;
+    padding: 0px;
 }
 i{
     cursor: pointer;
 }
 i:hover{
     opacity: 0.4;
+}
+.navbar2{
+    width: 100%;
+    color: white;
+    height: 40px;
+    padding: 8px 20px;
+    background-color:rgb(16, 16, 16,0.2);
+
+
+#left{
+    display: block;
+    float: left;
+}
+nav.navbar2#right{
+    float: right;
 }
